@@ -1,0 +1,95 @@
+.CVBody{
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.skills-container {
+  width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  display: inline-block;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  overflow: hidden;
+  height: 30px;
+  width: 250px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.progress {
+  background-color: #007bff;
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.level {
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.About{
+  justify-content: center;
+  align-items: center;
+  right:0;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.timeline-event {
+  margin-bottom: 30px;
+  position: relative;
+  height:130%;
+}
+
+.timeline-date {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  min-width: 120px;
+  margin-right: 20px;
+  z-index: 1; 
+}
+
+.timeline-content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.timeline-content p {
+  margin: 0;
+}

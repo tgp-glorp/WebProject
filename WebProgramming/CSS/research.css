@@ -1,0 +1,37 @@
+.anchImg{
+  width:10%;
+  height:10%;
+  background-color: transparent;
+}
+
+.explosionImg{
+  width:20%;
+  height:20%;
+  background-color: transparent;
+}
+
+.Research h1{
+  border: 2px solid;
+  border-image: linear-gradient(45deg,
+      #ff6b6b,
+      #f6d365,
+      #4ecdc4,
+      #5c5ced) 1;
+  border-image-slice: 1;
+  border-radius: 10px;
+  color: transparent;
+  /* Makes the text itself transparent */
+  background: linear-gradient(45deg, #ff00ff, #f01313, #f6d365, #4ecdc4, #5c5ced);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* For Safari */
+}
+
+.Research h2{
+  color: transparent;
+  /* Makes the text itself transparent */
+  background: linear-gradient(45deg, #ff87ff, #fc2f2f, #f6d365, #00ffee, #6565ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* For Safari */
+}

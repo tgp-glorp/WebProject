@@ -1,0 +1,356 @@
+/* Reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+}
+
+
+/* Container */
+.container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Sidebar */
+aside {
+  background-color: #0066cc;
+  color: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+aside img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+aside h1 {
+  font-size: 1.5em;
+}
+
+aside p {
+  font-style: italic;
+}
+
+.contact-info {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.contact-info li {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  margin-left: 20px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 1.5em;
+  color: #0066cc;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+section .icon {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.content p, .content ul {
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.focuse{
+  border: 1px solid;
+  border-image: linear-gradient(45deg,
+      #ff6b6b,
+      #f6d365,
+      #4ecdc4,
+      #5c5ced) 1;
+  border-image-slice: 1;
+  border-radius: 10px;
+}
+
+/* Skills Section */
+.skill-bar {
+  margin: 5px 0;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-bar .bar {
+  height: 20px;
+  background-color: #0066cc;
+  border-radius: 4px 0 0 4px;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+  font-size: 0.9em;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  aside {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  main {
+      margin-left: 0;
+  }
+}
+
+
+
+
+/* Form Container */
+.formContainer {
+  width: 80%;
+  background-color: rgb(32, 24, 24);
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+}
+
+/* Form Fields */
+fieldset {
+  margin-bottom: 20px;
+  border: none;
+  padding: 0;
+}
+
+.skill-entry {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.skill-entry input, .skill-entry select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.skill-entry button {
+  padding: 10px 15px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.skill-entry button:hover {
+  background-color: #005fa3;
+}
+
+/* Displaying Added Skills */
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.skills-list li {
+  margin-bottom: 5px;
+  padding: 8px;
+  color: transparent;
+  /* Makes the text itself transparent */
+  background: linear-gradient(45deg,#ff00ff, #ff6b6b, #f6d365, #4ecdc4, #5c5ced);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* For Safari */
+  font-size: xx-large;
+  border-radius: 4px;
+  border: 5px solid;
+  border-image: linear-gradient(45deg,
+      #ff6b6b,
+      #f6d365,
+      #4ecdc4,
+      #5c5ced) 1;
+  border-image-slice: 1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-list .skill-level {
+  font-weight: bold;
+  color: #333;
+}
+
+/* CV Output Styling */
+.cv-output {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Flashy CV Card Styling */
+.cv-card {
+  background: linear-gradient(145deg, #fdfbfb, #ebedee);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.6s ease-out;
+  color: #333;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header Section */
+.cv-header h1 {
+  font-size: 32px;
+  background: -webkit-linear-gradient(#007acc, #009ee0);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.cv-header p {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin-top: -8px;
+  opacity: 0.85;
+}
+
+/* Section Styling */
+.cv-section {
+  margin-top: 24px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+.cv-section h3 {
+  font-size: 22px;
+  color: #007acc;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Skill Bars with Animation */
+.skill-bar {
+  margin: 10px 0;
+  background-color: #ececec;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  height: 25px;
+}
+
+.skill-bar .bar {
+  height: 100%;
+  background: linear-gradient(90deg, #007acc, #00c6ff);
+  color: white;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  border-radius: 8px;
+  animation: fillBar 1s ease-out;
+}
+
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Adding Hover and Effects */
+.cv-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+
+.submit{
+  width:30%;
+  height:120%;
+  border: 5px solid;
+  border-image: linear-gradient(45deg,
+      #ff6b6b,
+      #f6d365,
+      #4ecdc4,
+      #5c5ced) 1;
+  border-image-slice: 1;
+  border-radius: 10px;
+  color: transparent;
+  /* Makes the text itself transparent */
+  background: radial-gradient(circle, #ff00ff, #ff6b6b, #f6d365, #4ecdc4, #5c5ced);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* For Safari */
+}

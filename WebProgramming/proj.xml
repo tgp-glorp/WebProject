@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wordle [
+  <!ELEMENT wordle (userInfo,friends)>
+  <!ELEMENT userInfo (userName,email,password,score,address?)>
+  <!ELEMENT userName (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT password (#PCDATA)>
+  <!ELEMENT score (#PCDATA)>
+  <!ELEMENT friends (#PCDATA)>
+  <!ELEMENT challenges (#PCDATA)>
+  <!ELEMENT streak (#PCDATA)>
+  <!ELEMENT address (Country,Governorate,Caza,City)>
+  <!ELEMENT Country (#PCDATA)>
+  <!ELEMENT Governorate (#PCDATA)>
+  <!ELEMENT Caza (#PCDATA)>
+  <!ELEMENT City (#PCDATA)>
+  <!ATTLIST userInfo ID ID #REQUIRED>
+]>
+
+<wordle>
+  <userInfo ID="user2">
+    <userName> </userName>
+
+    <email> </email>
+
+    <password> </password>
+
+    <score></score>
+
+
+  </userInfo>
+
+  <friends>
+
+  </friends>
+
+</wordle>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rabieh's CV</title>
+  <link rel="stylesheet" href="../CSS/CVDes.css">
+  <link rel="stylesheet" href="../CSS/semantics.css">
+  <script src="../script/CVJS.js" defer></script>
+  <script src="../script/script.js" defer></script>
+</head>
+
+<body>
+
+  
+  <header class="header">
+    <div class="header-container">
+      <div class="header-logo">
+        Rabieh
+      </div>
+
+      <nav class="header-nav">
+        <a href="../index.html"><button>Home</button></a>
+        <a href="Research.html"><button>Research</button></a>
+        <a href="../CV_2024-08-20_Rabieh_Hasbani.pdf"><button>CV</button></a>
+        <a href="#footer"><button>Contact US</button></a>
+        <a href="../html/schedule.html"><button>Schedule</button></a>
+        <a href="CVDesigner.html"><button>CVDesigner</button></a>
+        <a href="register.html"><button>Register</button></a>
+      </nav>
+
+    </div>
+
+    <!-- Optional bottom section for extra info -->
+    <div class="header-bottom">
+      Welcome to My Website!
+    </div>
+  </header>
+
+  <button class="disclaimer-button" onclick="showDisclaimer()">Discl⚠️imer!</button>
+
+  <!-- Disclaimer Section -->
+  <div class="disclaimer" id="disclaimer">
+    <p>This website is part of a university project and is intended for educational purposes only, information here is
+      to be taken with that in mind, thank you and welcome.</p>
+    <button onclick="showDisclaimer()">Close Disclaimer</button>
+  </div>
+
+
+  <div class="formContainer" id="formCont">
+    <h1>Create Your CV</h1>
+    <form id="cvForm">
+      <fieldset>
+        <legend class="focus">Contact:</legend>
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="phone" placeholder="Phone">
+        <input type="text" id="linkedin" placeholder="LinkedIn URL">
+      </fieldset>
+
+      <fieldset>
+        <legend class="focus">Education:</legend>
+        <input type="text" id="school" placeholder="School/University">
+        <input type="text" id="degree" placeholder="Degree">
+        <input type="text" id="graduation" placeholder="Graduation Year">
+      </fieldset>
+
+      <fieldset>
+        <legend class="focus">Experience:</legend>
+        <input type="text" id="jobTitle" placeholder="Job Title">
+        <input type="text" id="company" placeholder="Company">
+        <br>
+        <div>
+        <span class="focus">From</span>
+        <input type="date" id="jobStart">
+        <span class="focus">To</span>
+        <input type="date" id="jobEnd">
+        </div>
+        <br>
+        <textarea id="jobDescription" placeholder="Job Description"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend class="focus">Skills</legend>
+        <div class="skill-entry">
+          <input type="text" id="skillName" placeholder="Skill Name" class="skill-name">
+          <select id="skillLevel" class="skill-level">
+            <option value="30">Beginner</option>
+            <option value="60">Intermediate</option>
+            <option value="90">Expert</option>
+            <option value="100">Master</option>
+          </select>
+          <button  onclick="addSkill()">Add Skill</button>
+        </div>
+
+        <ul id="skillsDisplay" class="skills-list"></ul>
+      </fieldset>
+
+      <textarea placeholder="About you" id="summary"></textarea>
+
+      <br><br>
+
+      <button type="button" onclick="generateCV()" class="submit">Submit</button>
+    </form>
+
+  </div>
+  <div id="cvOutput" class="cv-output"></div>
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h2>About</h2>
+        <p>
+          I am Rabieh Hasbani, a 3rd year Software Engineering student at the university of USEK.
+        </p>
+      </div>
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Research.html">Research</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h2>Contact</h2>
+        <p>Email: rabih.z.hasbani@net.usek.edu.lb</a> </p>
+        <p>Phone: +965 70/837435 </p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+.myBody{
+  background-color: #1c1c1c; /* Dark gray */
+  color: #f0f0f0; /* Light gray for general text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.quote {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 20px;
+  padding: 10px;
+  border: 10px solid;
+  border-image: linear-gradient(45deg,
+      #ff6b6b,
+      #f6d365,
+      #4ecdc4,
+      #5c5ced) 1;
+  border-image-slice: 1;
+  border-radius: 10px;
+  color: transparent;
+  /* Makes the text itself transparent */
+  background: linear-gradient(45deg, #ff00ff, #ff6b6b, #f6d365, #4ecdc4, #5c5ced);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* For Safari */
+  font-size: xx-large;
+}
+
+
+/* Style for the author button */
+.authButton {
+  align-self: center;
+  display: inline-block;
+  color:transparent;
+  background: radial-gradient(circle, #4b4e6d, #6a75a9, #a393eb, #f3a683, #f7d794);
+  background-clip: text;
+  -webkit-background-clip: text;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-image: linear-gradient(45deg,
+  #ff6b6b,
+  #f6d365,
+  #4ecdc4,
+  #5c5ced) 1;
+  border-image-slice: 1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 130%;
+  width: 10%;
+}
+
+.authButton:hover {
+  background-color: #0056b3;
+}
+
+.button-container {
+  padding: 20px;
+  position: relative;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  left: 0;
+}
+
+/* Popup content */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  color: transparent;
+  background: radial-gradient(circle, #4b4e6d, #6a75a9, #a393eb, #f3a683, #f7d794);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top:0.1px;
+  left: 0;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  margin-left: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+  font-size: xx-large;
+}
+
+/* Toggle the popup visibility */
+.popup .show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,29 @@
+/* References Section */
+#ref {
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+.references-header {
+  color: transparent;
+  /* Makes the text itself transparent */
+  background: radial-gradient(circle, #ff00ff, #ff6b6b, #f6d365, #4ecdc4, #5c5ced);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* For Safari */
+}
+
+/* Ordered List (References) */
+ol {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 8px;
+}
+
+ol li a {
+  color: #004085;
+}

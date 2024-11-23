@@ -1,0 +1,58 @@
+#wordleForm {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  gap: 10px;
+}
+
+input {
+  height: 30px;
+  width: 50px;
+}
+
+
+
+.wordle-grid {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* General Tile Styling */
+.wordle-tile {
+  background-color: #333;
+  color: #ddd;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #444;
+  border-radius: 5px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Pop-Out Effect */
+.wordle-tile.pop {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Correct Letter (Green) */
+.wordle-tile.green {
+  background-color: #538d4e;
+  color: #fff;
+}
+
+/* Present Letter (Yellow) */
+.wordle-tile.yellow {
+  background-color: #b59f3b;
+  color: #fff;
+}
+
+/* Hover Effect */
+.wordle-tile:hover {
+  border-color: #666;
+}

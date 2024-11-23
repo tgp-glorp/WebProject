@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="EN-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>History Of The Internet</title>
+  <link rel="stylesheet" href="../CSS/semantics.css" />
+  <link rel="stylesheet" href="../CSS/reference.css"/>
+  <link rel="stylesheet" href="../CSS/research.css"/>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="header-logo">
+        Rabieh
+      </div>
+
+      <nav class="header-nav">
+        <a href="../index.html"><button>Home</button></a>
+        <a href="Research.html"><button>Research</button></a>
+        <a href="../CV_2024-08-20_Rabieh_Hasbani.pdf"><button>CV</button></a>
+        <a href="#footer"><button>Contact US</button></a>
+        <a href="../html/schedule.html"><button>Schedule</button></a>
+        <a href="CVDesigner.html"><button>CVDesigner</button></a>
+        <a href="register.html"><button>Register</button></a>
+      </nav>
+      
+    </div>
+
+    <!-- Optional bottom section for extra info -->
+    <div class="header-bottom">
+      Welcome to My Website!
+    </div>
+  </header>
+
+  <button class="disclaimer-button" onclick="showDisclaimer()">Discl⚠️imer!</button>
+
+  <!-- Disclaimer Section -->
+  <div class="disclaimer" id="disclaimer">
+    <p>This website is part of a university project and is intended for educational purposes only, information here is
+      to be taken with that in mind, thank you and welcome.</p>
+    <button onclick="showDisclaimer()">Close Disclaimer</button>
+  </div>
+  
+  <div>
+    <h1 class="FirstHeader">At-Rules</h1>
+    <h1>What are At-Rules:</h1>
+    <p>
+      At rules are CSS-Statements which tell CSS how to behave, they are structured in the following order:
+      <br>
+      @Identifier(Rule);
+    </p>
+    <h1>Types Of At-Rules:</h1>
+    <p>
+      There are 2 types of @Rules , the first is called the Statement-@Rules and is of the form shown above.
+      The second type of @Rules are the Block-@Rules which are of the following form:
+      <br>
+      @identifier(Rule){
+      <br>
+      }
+      <br>
+      Unlike the Statement-@Rules, Block-@Rules are considered to end at the }.
+      The inside of the block (between the brackets) can contain various things ranging from property declarations to
+      other @Rules.
+    </p>
+    <h2>Examples:</h2>
+    <h3>@import:</h3>
+    <p>
+      @import is one of the more commonly used @rules and it tells CSS to import an external style sheet such as
+      typography.css, some examples of this are:
+      <br>
+      @import url(“typography.css”);
+      <br>
+      @import url(“layout.css”);
+      <br>
+      The typography.css style sheet contains some specifications some of which are:
+
+
+
+    <pre>
+      body { 
+      font-family: 'Helvetica, Arial, sans-serif';
+       font-size: 16px; 
+      line-height: 1.5; 
+      color: #333; 
+      }
+      /* Headings */
+       h1 { 
+      font-size: 2.5em;
+       font-weight: bold; 
+      margin-bottom: 0.5em; 
+      }
+    </pre>
+    Similarly, the layout style sheet has its own set of specifications and using the @import allows for easy access to
+    these completed style sheets without requiring effort.
+    </p>
+    <h3>@property:</h3>
+    <p>
+      @property is among the more unique @rules since it allows for the user to create a new property, this property can
+      choose to inherit from other properties and this property can have its own default values, its own type checking ,
+      an example:
+      <br>
+    <pre>
+      @property --main-color {
+          syntax: "<color>";
+          inherits: true;
+          initial-value: red;
+      }
+      
+      /* Using the custom property */
+      body {
+          background-color: var(--main-color);
+      }
+      
+      h1 {
+          color: var(--main-color);
+      }
+      
+      button {
+          background-color: var(--main-color);
+          color: white;
+      }
+    </pre>
+    This new custom property called --main-color expects a color value, its default value is red which is inherited from
+    the original color class and it applies to the body, h1 and button tags.
+    </p>
+  </div>
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h2>About</h2>
+        <p>
+          I am Rabieh Hasbani, a 3rd year Software Engineering student at the university of USEK.
+        </p>
+      </div>
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Research.html">Research</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h2>Contact</h2>
+        <p>Email: rabih.z.hasbani@net.usek.edu.lb</a> </p>
+        <p>Phone: +965 70/837435 </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <button id="back-to-top" title="Go to top">↑</button>
+
+  <script src="../script/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+
+.table-container{
+  
+  justify-content: center;
+  padding-bottom:10px;
+}
+table{
+  height:1200px;
+  border-collapse:collapse;
+  margin:auto;
+  font-size:1.2em;
+  min-width:400px;
+  width:1000px;
+  border-radius:3px 3px 3px 3px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+  font-weight:bold;
+}
+table thead tr{
+  background-color: #009879;
+  color:white;
+  font-weight: bold;
+}
+table tbody tr{
+  text-align:center
+}
+table td{
+  width:200px;
+  padding:12px 15px;
+  border-right: 1px solid #000000;
+}
+table tr{
+  border-bottom:2px solid #009879;
+}
+table tr:last-of-type{
+  border-bottom:3px solid #009879;
+}
+table td{
+  position:relative;
+}
+
+.networking {
+  position: absolute; 
+  top:0;
+  bottom:0;
+  left:-0.5px;
+  width: 100.5%; 
+  height: 100%;
+  font-size: large;
+  background-color: #0fffcf;
+  color: white; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1200; 
+  overflow: hidden; 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(54, 50, 50, 0.3);
+  transition: transform 0.2s ease;
+}
+.networking:hover{
+  transform:scale(1.05);
+}
+
+.MathEng{
+  position: absolute; 
+  top:0;
+  bottom:0;
+  left:-0.5px;
+  width: 100.5%; 
+  height: 100%; 
+  font-size: large;
+  background-color: #0f2bff;
+  color: white; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1200; 
+  overflow: hidden; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(54, 50, 50, 0.3);
+  transition: transform 0.4s ease; 
+}
+
+.MathEng:hover{
+  transform:translateX(3px) translateY(2px);
+}
+
+.MoIC{
+  position: absolute; 
+  top:0; 
+  bottom:0;
+  left:-0.5px;
+  width: 100.5%; 
+  height: 100%; 
+  font-size: large;
+  background-color: #ff2d2a;
+  color: white; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1200; 
+  overflow: hidden; 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(54, 50, 50, 0.3); 
+  transition: transform 0.2s ease; 
+}
+.MoIC:hover{
+  transform:translateX(1px) translateY(1px);
+}
+
+.Algo{
+  position: absolute; 
+  top:0; 
+  bottom:0;
+  left:-0.5px;
+  width: 100.5%; 
+  height: 100%; 
+  font-size: large;
+  background-color: #18ecff;
+  color: white; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1200; 
+  overflow: hidden; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(54, 50, 50, 0.3);
+  transition: transform 0.2s ease; 
+}
+.Algo:hover{
+  transform:scale(1.1);
+}
+
+.Web {
+  position: absolute; 
+  top:0;
+  bottom:0;
+  left:-0.5px;
+  width: 100.5%; 
+  height: 100%;
+  font-size: large;
+  background-color: #0fff3f;
+  color: white; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1200; 
+  overflow: hidden; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(54, 50, 50, 0.3); 
+  transition: transform 0.2s ease; 
+}
+.Web:hover{
+  transform:scale(1.1);
+}
+
+
+.netLab{
+  position: absolute; 
+  top:0;
+  bottom:0;
+  left:-0.5px;
+  width: 100.5%; 
+  height: 100%; 
+  font-size: large;
+  background-color: #23f8ff;
+  color: white; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1200; 
+  overflow: hidden; 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(54, 50, 50, 0.3);
+  transition: transform 0.2s ease; 
+}
+.netLab:hover{
+  transform:scale(1.1);
+}
